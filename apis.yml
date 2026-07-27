@@ -1,7 +1,26 @@
 aid: ingu
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ingu.png
 name: INGU
-description: INGU is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: INGU is a pipeline integrity technology company delivering inline inspection
+  for oil & gas and water/wastewater pipelines through its Pipers multi-sensor free-floating
+  inspection system paired with AI analytics and GIS-based pipeline viewer software.
+  The platform performs leak detection, deposit and wall-condition assessment, and
+  detection of gas pockets, magnetic features, bends, and hot taps across pipelines
+  of any diameter or material. INGU has inspected over 900 pipelines for operators
+  including Chevron, Shell, TotalEnergies, SUEZ, and Vale. Added to the API Evangelist
+  network as a portfolio company of 500 Global; the company publishes no public API
+  or developer surface at this time.
 url: https://raw.githubusercontent.com/api-evangelist/ingu/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Pipeline Integrity
+- Inline Inspection
+- Oil and Gas
+- Water and Wastewater
+- Leak Detection
+- Industrial IoT
+- GIS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ingu-domain-security.yml
 - type: Website
   url: https://ingu.com
+- type: Blog
+  url: https://ingu.com/news/
+- type: Support
+  url: https://ingu.com/contact/
+- type: TermsOfService
+  url: https://ingu.com/termsandconditions/
+- type: PrivacyPolicy
+  url: https://ingu.com/privacy/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
